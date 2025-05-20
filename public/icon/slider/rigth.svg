@@ -1,0 +1,10 @@
+<svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<g opacity="0.240000" style="mix-blend-mode:normal">
+		<path id="Oval" d="M14 28C21.73 28 28 21.73 28 14C28 6.26 21.73 0 14 0C6.26 0 0 6.26 0 14C0 21.73 6.26 28 14 28Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<path id="Right Arrow" d="M11.99 8.66L11.46 9.2C11.28 9.39 11.2 9.61 11.2 9.85C11.2 10.11 11.28 10.32 11.46 10.5L14.92 14L11.46 17.49C11.28 17.67 11.2 17.88 11.2 18.14C11.2 18.38 11.28 18.6 11.46 18.79L11.99 19.32C12.17 19.5 12.39 19.6 12.64 19.6C12.9 19.6 13.11 19.5 13.28 19.32L17.92 14.64C18.1 14.47 18.2 14.25 18.2 14C18.2 13.74 18.1 13.52 17.92 13.34L13.28 8.66C13.11 8.48 12.89 8.4 12.64 8.4C12.39 8.4 12.18 8.48 11.99 8.66Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

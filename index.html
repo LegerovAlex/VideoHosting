@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__left-group">
+            <button type="button" class="header__menu">
+              <span class="header__menu-bar"></span>
+              <span class="header__menu-bar"></span>
+              <span class="header__menu-bar"></span>
+            </button>
+            <a href="/" class="header__logo">
+              <img
+                src="/icon/header/logo.svg"
+                alt="YouTube Logo"
+                width="116"
+                height="25"
+              />
+            </a>
+          </div>
+          <div class="header__rigth-group">
+            <form class="header__search" role="search">
+              <input
+                class="header__search-input"
+                placeholder="Search"
+                type="text"
+              />
+              <button type="submit" class="header__search-button">
+                <img
+                  src="/icon/header/search.svg"
+                  alt="Search Icon"
+                  width="18"
+                  height="18"
+                />
+              </button>
+            </form>
+            <nav class="header__actions">
+              <ul class="header__actions-list">
+                <li class="header__actions-item">
+                  <button class="header__actions-button" type="button">
+                    <img
+                      src="/icon/header/video.svg"
+                      alt="Video Icon"
+                      width="27"
+                      height="20"
+                    />
+                  </button>
+                </li>
+                <li class="header__actions-item">
+                  <button class="header__actions-button" type="button">
+                    <img
+                      src="/icon/header/share.svg"
+                      alt="Share Icon"
+                      height="21"
+                      width="21"
+                    />
+                  </button>
+                </li>
+                <li class="header__actions-item">
+                  <button
+                    class="header__actions-button header__actions-button--notification"
+                    type="button"
+                  >
+                    <img
+                      src="/icon/header/notification.svg"
+                      alt="Notification Icon"
+                      width="22"
+                      height="26"
+                    />
+                    <span class="header__actions-badge">3</span>
+                  </button>
+                </li>
+              </ul>
+              <button class="header__avatar-button" type="button">
+                <img
+                  src="/img/sub/user.png"
+                  alt="User avatar"
+                  width="40"
+                  height="40"
+                />
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <nav class="menu">
+            <section class="menu__section">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/home.svg"
+                      alt="Home Icon"
+                      width="20"
+                      height="19"
+                    />
+                    <span class="menu__text">Home</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/trends.svg"
+                      alt="Trend Icon"
+                      width="16"
+                      height="20"
+                    />
+                    <span class="menu__text">Trending</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/subscriptions.svg"
+                      alt="Sub Icon"
+                      width="18"
+                      height="18"
+                    />
+                    <span class="menu__text">Subscriptions</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/library.svg"
+                      alt="Library Icon"
+                      width="20"
+                      height="16"
+                    />
+                    <span class="menu__text">Library</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/history.svg"
+                      alt="History Icon"
+                      width="20"
+                      height="18"
+                    />
+                    <span class="menu__text">History</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/watch.svg"
+                      alt="Watch Icon"
+                      width="17"
+                      height="19"
+                    />
+                    <span class="menu__text">Watch later</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/fav.svg"
+                      alt="Fav Icon"
+                      width="19"
+                      height="18"
+                    />
+                    <span class="menu__text">Favourites</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/like.svg"
+                      alt="Like Icon"
+                      width="18"
+                      height="17"
+                    />
+                    <span class="menu__text">Liked videos</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/music.svg"
+                      alt="Music Icon"
+                      width="18"
+                      height="20"
+                    />
+                    <span class="menu__text">Music</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/games.svg"
+                      alt="Games Icon"
+                      width="22"
+                      height="16"
+                    />
+                    <span class="menu__text">Games</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <img
+                      src="/icon/nav/more.svg"
+                      alt="Show more Icon"
+                      width="13"
+                      height="8"
+                    />
+                    <span class="menu__text">Show more</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+          <section class="subscriptions">
+            <h2 class="subscriptions__title">Subscriptions</h2>
+            <ul class="subscriptions__list">
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user1.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Gussie Singleton</span>
+                </a>
+              </li>
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user2.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Nora Francis</span>
+                </a>
+              </li>
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user3.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Belle Briggs</span>
+                </a>
+              </li>
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user4.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Eunice Cortez</span>
+                </a>
+              </li>
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user5.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Emma Hanson</span>
+                </a>
+              </li>
+              <li class="subscriptions__item">
+                <a href="#" class="subscriptions__link">
+                  <img
+                    src="/img/sub/user6.png"
+                    alt="Channel name"
+                    class="subscriptions__avatar"
+                    width="50"
+                    height="50"
+                  />
+                  <span class="subscriptions__name">Leah Berry</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <div class="setting">
+            <button class="setting__button" type="button" aria-label="Setting">
+              <img
+                src="/icon/nav/setting.svg"
+                alt="Setting icon"
+                class="setting__icon"
+                width="19"
+                height="20"
+              />
+              <span class="setting__text">Setting</span>
+            </button>
+          </div>
+        </aside>
+        <main class="main">
+          <section class="video-section video-section--profile video-swiper">
+            <div class="video-section__top">
+              <a href="#" class="video-section__profile">
+                <img
+                  src="/img/profile/user.png"
+                  alt="Channel Img"
+                  class="video-section__avatar"
+                  width="50"
+                  height="50"
+                />
+                <h2 class="video-section__username">Margaret Phelps</h2>
+              </a>
+              <div class="video-section__actions">
+                <button class="video-section__action-button swiper-button-prev">
+                  <img
+                    src="/icon/slider/left.svg"
+                    alt="Left Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+                <button class="video-section__action-button swiper-button-next">
+                  <img
+                    src="/icon/slider/rigth.svg"
+                    alt="Right Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+              </div>
+            </div>
+            <ul class="video-section__cards swiper-wrapper">
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video1.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">4:15</span>
+                  </div>
+                  <h3 class="video-card__title">A Brief History Of Creation</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>80k views</span>
+                      <span>·</span>
+                      <span>3 days ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video5.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">8:00</span>
+                  </div>
+                  <h3 class="video-card__title">Selecting The Right Hotel</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>123k views</span>
+                      <span>·</span>
+                      <span>1 months ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video2.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">5:32</span>
+                  </div>
+                  <h3 class="video-card__title">Asteroids</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>43k views</span>
+                      <span>·</span>
+                      <span>12 days ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video3.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">6:40</span>
+                  </div>
+                  <h3 class="video-card__title">Telescopes 101</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>11k views</span>
+                      <span>·</span>
+                      <span>6 months ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video4.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">1:45</span>
+                  </div>
+                  <h3 class="video-card__title">Medical Care Is Just</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>18K views</span>
+                      <span>·</span>
+                      <span>2 days ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video6.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">2:12</span>
+                  </div>
+                  <h3 class="video-card__title">Moon Gazing</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>67k views</span>
+                      <span>·</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section
+            class="video-section video-section--recommended video-swiper"
+          >
+            <div class="video-section__top">
+              <h2 class="video-section__username">Recommended</h2>
+              <div class="video-section__actions">
+                <button class="video-section__action-button swiper-button-prev">
+                  <img
+                    src="/icon/slider/left.svg"
+                    alt="Left Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+                <button class="video-section__action-button swiper-button-next">
+                  <img
+                    src="/icon/slider/rigth.svg"
+                    alt="Right Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+              </div>
+            </div>
+            <ul class="video-section__cards swiper-wrapper">
+              <li class="video-card video-card--large swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video7.png"
+                      alt="Video Img"
+                      width="540"
+                      height="250"
+                    />
+                    <span class="video-card__duration">3:40</span>
+                  </div>
+                  <h3 class="video-card__title">
+                    Dude You Re Getting A Telescope
+                  </h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>34k views</span>
+                      <span>·</span>
+                      <span>5 months ago</span>
+                    </div>
+                    <div class="video-card__author">Gussie French</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card video-card--large swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video8.png"
+                      alt="Video Img"
+                      width="540"
+                      height="250"
+                    />
+                    <span class="video-card__duration">2:12</span>
+                  </div>
+                  <h3 class="video-card__title">Moon Gazing</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>54k views</span>
+                      <span>·</span>
+                      <span>11 months ago</span>
+                    </div>
+                    <div class="video-card__author">Edward Osborne</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card video-card--large swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video9.png"
+                      alt="Video Img"
+                      width="540"
+                      height="250"
+                    />
+                    <span class="video-card__duration">2:12</span>
+                  </div>
+                  <h3 class="video-card__title">Moon Gazing</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>125k views</span>
+                      <span>·</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="video-section video-section--category video-swiper">
+            <div class="video-section__top">
+              <div class="video-section__info">
+                <img
+                  class="video-section__logo"
+                  src="/icon/profile/logo.svg"
+                  alt="Channel Logo"
+                  width="50"
+                  height="50"
+                />
+                <h2 class="video-section__username">Food & Drink</h2>
+                <p class="video-section__subtitle">
+                  Recommended channel for you
+                </p>
+              </div>
+              <div class="video-section__actions">
+                <button class="video-section__subscribe-button">
+                  Subscribe 2.3m
+                </button>
+                <button class="video-section__action-button swiper-button-prev">
+                  <img
+                    src="/icon/slider/left.svg"
+                    alt="Left Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+                <button class="video-section__action-button swiper-button-next">
+                  <img
+                    src="/icon/slider/rigth.svg"
+                    alt="Right Icon"
+                    width="28"
+                    height="28"
+                  />
+                </button>
+              </div>
+            </div>
+            <ul class="video-section__cards swiper-wrapper">
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video10.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">7:36</span>
+                  </div>
+                  <h3 class="video-card__title">Astronomy Or Astrology</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>240k views</span>
+                      <span>·</span>
+                      <span>4 month ago</span>
+                    </div>
+                    <div class="video-card__author">Food & Drink</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video11.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">2:19</span>
+                  </div>
+                  <h3 class="video-card__title">Advertising Outdoors</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>13k views</span>
+                      <span>·</span>
+                      <span>5 days ago</span>
+                    </div>
+                    <div class="video-card__author">Food & Drink</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video12.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">9:05</span>
+                  </div>
+                  <h3 class="video-card__title">Radio Astronomy</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>1k views</span>
+                      <span>·</span>
+                      <span>11 months ago</span>
+                    </div>
+                    <div class="video-card__author">Food & Drink</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video13.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">3:40</span>
+                  </div>
+                  <h3 class="video-card__title">A Good Autoresponder</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>45 views</span>
+                      <span>·</span>
+                      <span>2 months ago</span>
+                    </div>
+                    <div class="video-card__author">Food & Drink</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video14.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">1:56</span>
+                  </div>
+                  <h3 class="video-card__title">Baby Monitor Technology</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>86k views</span>
+                      <span>·</span>
+                      <span>7 days ago</span>
+                    </div>
+                    <div class="video-card__author">Food & Drink</div>
+                  </div>
+                </a>
+              </li>
+              <li class="video-card swiper-slide">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__profile">
+                    <img
+                      class="video-card__img"
+                      src="/img/video/video15.png"
+                      alt="Video Img"
+                      width="250"
+                      height="150"
+                    />
+                    <span class="video-card__duration">4:15</span>
+                  </div>
+                  <h3 class="video-card__title">Asteroids</h3>
+                  <div class="video-card__description">
+                    <div class="video-card__meta">
+                      <span>123k views</span>
+                      <span>·</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <div class="video-card__author">Dollie Blair</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" defer src="./src/scripts/main.js"></script>
+  </body>
+</html>

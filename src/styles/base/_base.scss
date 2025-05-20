@@ -1,0 +1,12 @@
+@use './_vars.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+  font-family: $font-main;
+  background-color: $bg-main;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+}

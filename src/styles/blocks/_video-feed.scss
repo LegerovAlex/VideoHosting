@@ -1,0 +1,127 @@
+@use '../base/vars' as *;
+@use 'swiper/scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-right: 60px;
+  overflow: hidden;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__top {
+    max-width: 1515px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &__username {
+    font-size: 26px;
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-secondary;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__subscribe-button {
+    padding: 10px 20px;
+    background-color: $accent-danger;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-duration;
+    border-radius: 20px;
+    margin-right: 25px;
+  }
+}
+
+.video-card {
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__profile {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    width: 250px;
+    aspect-ratio: 16 / 10;
+    border-radius: 14px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &--large {
+    .video-card__img {
+      width: 540px;
+      aspect-ratio: 2 / 1;
+    }
+  }
+
+  &__duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 3px 9px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $text-duration;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 4px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    color: $text-secondary;
+  }
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+}

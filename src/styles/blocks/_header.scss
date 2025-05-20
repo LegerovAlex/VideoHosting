@@ -1,0 +1,108 @@
+@use '../base/vars' as *;
+
+.header {
+  max-width: 1920px;
+  &__container {
+    padding: 20px 70px 0 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 50px;
+  }
+
+  &__left-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 17px;
+
+    &-bar {
+      display: block;
+      height: 3px;
+      background-color: $bg-dark;
+      border-radius: 2px;
+    }
+  }
+
+  &__rigth-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    background-color: $bg-placeholder;
+    border-radius: 22px;
+    max-width: 830px;
+    width: 100%;
+
+    &-input {
+      padding: 12px 0 12px 23px;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+
+      &::placeholder {
+        color: $text-placeholder;
+      }
+    }
+
+    &-button {
+      padding-right: 17px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+    &-button--notification {
+      position: relative;
+    }
+
+    &-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background-color: $accent-danger;
+      color: white;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+      font-weight: 700;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 71px;
+    }
+  }
+
+  &__avatar-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+}
