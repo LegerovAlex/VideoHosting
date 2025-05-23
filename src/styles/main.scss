@@ -1,6 +1,7 @@
 @use './base/vars' as *;
 @use './base/reset';
 @use './base/base';
+@use './base/mixin';
 @use './blocks/header';
 @use './blocks/layout';
 @use './blocks/sidebar';

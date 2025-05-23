@@ -2,9 +2,8 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { initLinks } from './main';
 
-const MIN_SLIDES_FOR_LOOP = 8;
-
 export function initSwipers() {
+  const MIN_SLIDES_FOR_LOOP = 7;
   document.querySelectorAll('.video-swiper').forEach((slider) => {
     if (slider.swiper) {
       slider.swiper.destroy();
@@ -29,6 +28,8 @@ export function initSwipers() {
       modules: [Navigation],
       slidesPerView: 'auto',
       spaceBetween: 40,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
       loop: true,
       loopedSlides: MIN_SLIDES_FOR_LOOP,
       navigation: {
@@ -42,4 +43,5 @@ export function initSwipers() {
 document.addEventListener('DOMContentLoaded', () => {
   initSwipers();
   initLinks();
+  history.replaceState({}, '', '/');
 });

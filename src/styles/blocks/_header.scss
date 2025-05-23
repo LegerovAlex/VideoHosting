@@ -1,4 +1,5 @@
 @use '../base/vars' as *;
+@use '../base/mixin' as *;
 
 .header {
   max-width: 1920px;
@@ -37,6 +38,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     width: 100%;
   }
 
@@ -71,6 +73,13 @@
     align-items: center;
     gap: 45px;
 
+    &-button {
+      &:hover img {
+        filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(0deg)
+          brightness(100%) contrast(118%);
+      }
+    }
+
     &-button--notification {
       position: relative;
     }
@@ -97,6 +106,14 @@
       flex-direction: row;
       align-items: center;
       gap: 71px;
+
+      @include mediaLaptop {
+        gap: 30px;
+      }
+
+      @include mediaTablet {
+        gap: 20px;
+      }
     }
   }
 

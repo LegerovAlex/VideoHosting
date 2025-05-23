@@ -1,0 +1,25 @@
+@use './vars' as *;
+
+@mixin mediaDesktop {
+  @media (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin mediaLaptop {
+  @media (max-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin mediaTablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin mediaMobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}

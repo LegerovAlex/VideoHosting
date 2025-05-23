@@ -1,4 +1,5 @@
 import './slider';
+import { initTabs } from './tabs';
 import { initSwipers } from './slider';
 
 let cachedVideoFeed = null;
@@ -26,6 +27,7 @@ async function loadChannelFragment(path) {
     if (newMain && currentMain) {
       currentMain.replaceWith(newMain);
       initSwipers();
+      initTabs();
     }
   } catch (err) {
     console.log('Ops, Sorry', err);
@@ -34,7 +36,6 @@ async function loadChannelFragment(path) {
 
 window.addEventListener('popstate', () => {
   if (window.location.pathname === '/') {
-    history.replaceState({}, '', '/');
     const channelMain = document.querySelector('.channel-main');
     if (cachedVideoFeed && channelMain) {
       channelMain.replaceWith(cachedVideoFeed);
