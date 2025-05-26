@@ -1,0 +1,88 @@
+@use '../base/mixin' as *;
+
+@include mediaMobile {
+  .channel-banner {
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+    margin-bottom: 0;
+
+    &__img {
+      height: 100px;
+      border-radius: 0;
+    }
+  }
+
+  .channel-info {
+    position: relative;
+    margin-top: -40px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: start;
+    gap: 20px;
+
+    &__actions img {
+      display: none;
+    }
+
+    &__actions {
+      gap: 0;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__main {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+    }
+
+    &__avatar {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__details {
+      gap: 4px;
+    }
+
+    &__button {
+      padding: 10px 17px;
+      font-size: 12px;
+    }
+  }
+
+  .channel-content {
+    justify-content: start;
+    margin-bottom: 14px;
+    &__main,
+    &__aside {
+      display: none;
+    }
+
+    &__tabs {
+      gap: 40px;
+    }
+
+    &__tab {
+      font-size: 14px;
+    }
+  }
+
+  .channel-content__tab-item:nth-child(n + 5) {
+    display: none;
+  }
+
+  .tab-mobile-only {
+    display: block;
+    position: relative;
+    top: 7px;
+  }
+}

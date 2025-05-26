@@ -1,0 +1,38 @@
+@use '../base/mixin' as *;
+@use '../base/vars' as *;
+
+@include mediaMobile {
+  .sidebar {
+    display: block;
+    padding: 12px 22px 11px 22px;
+    border-top: 1px solid $border-default;
+  }
+
+  .subscriptions,
+  .setting {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 0;
+    &__list {
+      flex-direction: row;
+      gap: 50px;
+    }
+    &__link {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+  }
+
+  .menu__section:nth-of-type(2) .menu__item:not(:first-child) {
+    display: none;
+  }
+}

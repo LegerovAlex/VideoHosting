@@ -1,0 +1,43 @@
+@use '../base/vars' as *;
+@use '../base/mixin' as *;
+
+@include mediaMobile {
+  .header {
+    &__container {
+      justify-content: space-between;
+      margin-bottom: 5px;
+      padding: 16px;
+      gap: 0;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__rigth-group {
+      width: auto;
+      gap: 25px;
+    }
+
+    &__search {
+      background-color: $bg-main;
+    }
+
+    &__search-input {
+      display: none;
+    }
+
+    &__search-button {
+      padding: 0;
+    }
+
+    &__actions-list {
+      display: none;
+    }
+
+    &__avatar-button img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

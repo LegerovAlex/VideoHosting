@@ -1,0 +1,32 @@
+@use '../base/vars' as *;
+@use '../base/mixin' as *;
+
+@include mediaMobile {
+  .video-feed {
+    padding: 0 15px 15px 15px;
+    .video-section {
+      &--recommended,
+      &--category {
+        display: none;
+      }
+    }
+  }
+
+  .video-section {
+    overflow-y: hidden;
+    &__top {
+      display: none;
+    }
+  }
+
+  .swiper-wrapper {
+    height: 888px;
+  }
+
+  .video-card {
+    &__img {
+      width: 100vw;
+      max-width: 100%;
+    }
+  }
+}

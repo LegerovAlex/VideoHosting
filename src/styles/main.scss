@@ -2,8 +2,12 @@
 @use './base/reset';
 @use './base/base';
 @use './base/mixin';
-@use './blocks/header';
+@use './blocks/header' as headerDesktop;
 @use './blocks/layout';
-@use './blocks/sidebar';
-@use './blocks/video-feed';
-@use './blocks/channel';
+@use './blocks/sidebar' as sideBarDesktop;
+@use './blocks/video-feed' as videoFeedDesktop;
+@use './blocks/channel' as channelDesktop;
+@use './mobile/header.mobile' as headerMobile;
+@use './mobile/video-feed.mobile' as videoFeedMobile;
+@use './mobile/sidebar.mobile' as sideBarMobile;
+@use './mobile/channel.mobile' as channelMobile;

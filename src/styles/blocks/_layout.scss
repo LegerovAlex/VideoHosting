@@ -1,5 +1,12 @@
+@use '../base/mixin' as *;
+
 .layout {
   max-width: 1920px;
   display: flex;
   gap: 48px;
+
+  @include mediaMobile {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
 }

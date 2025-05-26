@@ -26,15 +26,24 @@ export function initSwipers() {
 
     new Swiper(slider, {
       modules: [Navigation],
-      slidesPerView: 'auto',
-      spaceBetween: 40,
-      watchSlidesProgress: true,
-      watchSlidesVisibility: true,
-      loop: true,
-      loopedSlides: MIN_SLIDES_FOR_LOOP,
-      navigation: {
-        nextEl: nextBtn,
-        prevEl: prevBtn
+      direction: 'vertical',
+      slidesPerView: 4,
+      spaceBetween: 30,
+      freeMode: true,
+      breakpoints: {
+        580: {
+          direction: 'horizontal',
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          watchSlidesProgress: true,
+          watchSlidesVisibility: true,
+          loop: true,
+          loopedSlides: MIN_SLIDES_FOR_LOOP,
+          navigation: {
+            nextEl: nextBtn,
+            prevEl: prevBtn
+          }
+        }
       }
     });
   });
