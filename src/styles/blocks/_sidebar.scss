@@ -32,10 +32,17 @@
       .menu__text {
         color: $accent-danger;
       }
-      img {
-        filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(0deg)
-          brightness(100%) contrast(118%);
+
+      svg path {
+        fill: $accent-danger;
+        opacity: 1;
       }
+    }
+
+    svg path {
+      transition:
+        fill 0.2s ease-in,
+        opacity 0.2s ease-in;
     }
   }
 
@@ -97,10 +104,16 @@
         color: $accent-danger;
       }
 
-      .setting__icon {
-        filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(0deg)
-          brightness(100%) contrast(118%);
+      svg path {
+        fill: $accent-danger;
+        opacity: 1;
       }
+    }
+
+    svg path {
+      transition:
+        fill 0.2s ease,
+        opacity 0.2s ease;
     }
   }
 
